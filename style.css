@@ -1,18 +1,15 @@
 body{
-  margin:0;
+  margin: 0;
+  margin-top: 50px;
 }
 
 .master{
-  height: 100vh;
+  height: 1400px;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.card{
-  display: flex;
-  justify-content: space-between;
-}
 .header{
   background-color: #1f2937;
   color: #F9FAF8;
@@ -22,6 +19,12 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* sticky header */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
 }
 .logo{
   font-size: 24px;
@@ -40,7 +43,78 @@ li, a{
   color: #e5e7eb;
 }
 
+.card{
+  display: flex;
+  background-color: aqua;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+}
 
+.one{
+  background-color: #1f2937;
+  color: #F9FAF8;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 0px;
+  flex: 1;
+}
+.content-container{
+  width: 450px;
+  height: 200px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.title-one{
+  font-size: 48px;
+  font-weight: bolder;
+}
+.desc-one{
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.heart{
+  width: 30px;
+  height: 30px;
+  padding-left: 10px;
+}
+.button-one{
+  background-color: #3882f6;
+  border: none;
+  color: white;
+  padding: 5px 15px 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.img-one > img{
+  width: 450px;
+  height: auto;
+  padding: 30px;
+}
+
+
+.two{
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.three{
+  background-color: #e5e7eb;
+  flex: 1;
+}
+
+.four{
+  background-color: #ffffff;
+  flex: .5;
+}
 
 
 
