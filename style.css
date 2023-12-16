@@ -4,12 +4,13 @@ body{
 }
 
 .master{
-  height: 1400px;
+  height: 1700px;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* header */
 .header{
   background-color: #1f2937;
   color: #F9FAF8;
@@ -17,7 +18,7 @@ body{
   padding-left: 70px;
   padding-right: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between ;
   align-items: center;
 
   /* sticky header */
@@ -43,6 +44,7 @@ li, a{
   color: #e5e7eb;
 }
 
+/* all cards */
 .card{
   display: flex;
   background-color: aqua;
@@ -50,19 +52,20 @@ li, a{
   flex-wrap: wrap;
 }
 
+/* card one */
 .one{
   background-color: #1f2937;
   color: #F9FAF8;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 10px;
   row-gap: 0px;
   flex: 1;
 }
-.content-container{
+.content-container-one{
   width: 450px;
   height: 200px;
-  margin: 30px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -86,7 +89,7 @@ li, a{
   background-color: #3882f6;
   border: none;
   color: white;
-  padding: 5px 15px 5px 20px;
+  padding: 10px 15px 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -100,15 +103,68 @@ li, a{
   padding: 30px;
 }
 
-
+/* card two */
 .two{
   background-color: #ffffff;
   flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+.title-two{
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
+}
+.content-container-two{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.box{
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  border: 4px #3882f6 solid;
+
+  /* adding cropped images requires html alteration + these properties */
+  background-size: cover;
+  background-position: center;}
+.desc-two{
+  width: 150px;
+  text-align: center;
 }
 
 .three{
   background-color: #e5e7eb;
   flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.quote{
+  width: 800px;
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+}
+.name{
+  width: 800px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .four{
